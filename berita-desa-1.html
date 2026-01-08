@@ -18,7 +18,44 @@
             <p>Website resmi desa kini dapat diakses oleh seluruh warga untuk mempermudah informasi administrasi dan transparansi desa.</p>
             <p>Peluncuran Website Desa Menjadi Momen Penting Untuk tranformasi Digital Desa, Bertujuan untuk meningkatkan Transparansi, Pelayanan Publik, dan Keterbukaan Informasi Pembangunan, Sering kali didukung Pemerintah pusat/daerah dan melibatkan pemuda desa dalam pengelolaanya, menjadikan sarana untuk mewujudkan desa yang lebih maju, mandiri, dan berdaya saing di era digital.</p>
         </div>
-        
+        <div class="mt-8 pt-6 border-t border-gray-100">
+  <p class="text-sm font-semibold text-gray-500 mb-3">Bagikan berita ini:</p>
+  <div class="flex flex-wrap gap-3">
+    
+    <a id="share-wa" href="#" target="_blank" 
+       class="flex items-center bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition">
+       <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+    </a>
+
+    <a id="share-fb" href="#" target="_blank" 
+       class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+       <i class="fab fa-facebook mr-2"></i> Facebook
+    </a>
+
+    <button onclick="copyToClipboard()" 
+       class="flex items-center bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition">
+       <i class="fas fa-link mr-2"></i> Salin Link
+    </button>
+
+  </div>
+</div>
+
+<script>
+  const currentUrl = window.location.href;
+  const currentTitle = document.title;
+
+  // Link WhatsApp
+  document.getElementById('share-wa').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(currentTitle + ' - ' + currentUrl)}`;
+
+  // Link Facebook
+  document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+
+  // Fungsi Salin Link
+  function copyToClipboard() {
+    navigator.clipboard.writeText(currentUrl);
+    alert("Link berita berhasil disalin!");
+  }
+</script>
         <div class="mt-10 pt-6 border-t border-gray-100 text-sm text-gray-500">
             Diterbitkan oleh: Pemerintah Desa Tanete
         </div>
