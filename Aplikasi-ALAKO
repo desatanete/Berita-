@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudahkan Warga, Pemdes Tanete Sosialisasikan Pelayanan Adminduk Online Lewat Aplikasi ALAKOf</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10 px-4">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+        <a href="index.html" class="text-blue-600 font-semibold hover:underline">← Kembali ke Daftar Berita</a>
+        
+        <h1 class="text-3xl font-bold my-6 text-gray-800">Mudahkan Warga, Pemdes Tanete Sosialisasikan Pelayanan Adminduk Online Lewat Aplikasi ALAKO</h1>
+        
+        <img src="https://desatanete.github.io/assets/website-desa.jpeg" class="w-full rounded-xl mb-8 shadow-md">
+        
+        <div class="text-gray-700 leading-relaxed text-lg space-y-4">
+            <p>TANETE – Kabar gembira bagi warga Desa Tanete yang ingin mengurus dokumen kependudukan. Kini, pengurusan administrasi kependudukan (Adminduk) tidak lagi mengharuskan warga jauh-jauh datang ke kantor Disdukcapil di pusat kabupaten. Melalui aplikasi ALAKO (Aplikasi Layanan Administrasi Kependudukan Online), pelayanan kini bisa diakses langsung dari kantor desa.</p>
+            <p>Inovasi dari Disdukcapil Kabupaten Sidrap ini telah diintegrasikan di Desa Tanete untuk mempercepat proses pelayanan Kartu Keluarga (KK), Akta Kelahiran, Akta Kematian, hingga surat pindah secara digital.</p>
+            <p>Kepala Desa Tanete, H. Baharuddin, SE, menjelaskan bahwa hadirnya sistem ALAKO di kantor desa adalah bentuk komitmen pemerintah dalam memberikan pelayanan prima. Petugas di kantor desa kini siap membantu warga yang mengalami kesulitan teknologi untuk melakukan pengajuan secara daring.</p>
+            <p>"Dengan aplikasi ALAKO, warga Tanete cukup membawa berkas persyaratan ke kantor desa. Petugas operator desa kami akan membantu mengunggah data tersebut ke sistem. Begitu selesai dan diverifikasi oleh Capil, dokumen tersebut bisa langsung dicetak, bahkan ada yang dikirimkan dalam bentuk PDF ke nomor WhatsApp warga," jelas beliau.</p>
+            <p>Keunggulan utama dari pelayanan online ini adalah efisiensi. Warga tidak perlu lagi mengeluarkan biaya transportasi dan mengantre berjam-jam di kantor kabupaten.</p>
+            <p>Nur Wahyu Hidayat, Operator aplikasi ALAKO Desa Tanete, menambahkan bahwa sistem ini sangat transparan. "Prosesnya bisa dipantau secara langsung. Jika berkas lengkap, prosesnya sangat cepat. Kami ingin memastikan tidak ada lagi warga Tanete yang tidak memiliki dokumen kependudukan hanya karena alasan jarak yang jauh," tuturnya.</p>
+            <p>Beberapa layanan yang paling sering diakses warga melalui aplikasi ALAKO di Desa Tanete meliputi: Penerbitan Kartu Keluarga (KK) baru atau perubahan data, Pembuatan Akta Kelahiran dan Akta Kematian, dan Pengurusan Surat Keterangan Pindah Datang.</p>
+            <p>Pemerintah Desa Tanete mengimbau seluruh warga untuk segera mengurus dokumen kependudukannya dan memastikan data yang dimiliki sudah akurat. Pelayanan ini bersifat gratis alias tidak dipungut biaya apa pun. Warga cukup datang ke Kantor Desa Tanete pada jam kerja dengan membawa persyaratan yang diperlukan.</p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-100">
+  <p class="text-sm font-semibold text-gray-500 mb-3">Bagikan berita ini:</p>
+  <div class="flex flex-wrap gap-3">
+    
+    <a id="share-wa" href="#" target="_blank" 
+       class="flex items-center bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition">
+       <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+    </a>
+
+    <a id="share-fb" href="#" target="_blank" 
+       class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+       <i class="fab fa-facebook mr-2"></i> Facebook
+    </a>
+
+    <button onclick="copyToClipboard()" 
+       class="flex items-center bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition">
+       <i class="fas fa-link mr-2"></i> Salin Link
+    </button>
+
+  </div>
+</div>
+
+<script>
+  const currentUrl = window.location.href;
+  const currentTitle = document.title;
+
+  // Link WhatsApp
+  document.getElementById('share-wa').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(currentTitle + ' - ' + currentUrl)}`;
+
+  // Link Facebook
+  document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+
+  // Fungsi Salin Link
+  function copyToClipboard() {
+    navigator.clipboard.writeText(currentUrl);
+    alert("Link berita berhasil disalin!");
+  }
+</script>
+        <div class="mt-10 pt-6 border-t border-gray-100 text-sm text-gray-500">
+            Diterbitkan oleh: Pemerintah Desa Tanete
+        </div>
+    </div>
+</body>
+</html>
