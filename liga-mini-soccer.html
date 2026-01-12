@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pererat Persaudaraan, Pemuda Desa Tanete Gelar Liga Mini Soccer Malam Hari dengan Sistem Unik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10 px-4">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+        <a href="index.html" class="text-blue-600 font-semibold hover:underline">← Kembali ke Daftar Berita</a>
+        
+        <h1 class="text-3xl font-bold my-6 text-gray-800">Pererat Persaudaraan, Pemuda Desa Tanete Gelar Liga Mini Soccer Malam Hari dengan Sistem Unik!</h1>
+        
+        <img src="https://desatanete.github.io/assets/mini-soccer.jpeg" class="w-full rounded-xl mb-8 shadow-md">
+        
+        <div class="text-gray-700 leading-relaxed text-lg space-y-4">
+            <p>TANETE – Semangat kebersamaan pemuda Desa Tanete tidak pernah padam, bahkan di waktu malam. Bertempat di Lapangan King Mini Soccer, puluhan pemuda berkumpul untuk menyelenggarakan Liga Mini Soccer Internal, sebuah kompetisi sepak bola skala kecil yang dirancang khusus untuk menjalin silaturahmi, (Senin,12/01/2026).</p>
+            <p>Berbeda dengan turnamen pada umumnya, liga kali ini mengusung konsep yang sangat unik: Sistem Tim Acak (Random Team). Seluruh pemain yang berasal dari berbagai dusun di Desa Tanete diundi secara acak untuk membentuk tim baru. Hal ini bertujuan agar para pemuda bisa saling mengenal lebih dekat tanpa ada sekat antar-wilayah atau kelompok.</p>
+            <p>Kegiatan yang digelar pada malam hari di bawah sorot lampu lapangan ini memiliki nuansa yang sangat akrab. Menariknya, pertandingan ini dilaksanakan tanpa kehadiran penonton umum. Mereka yang duduk di pinggir lapangan adalah para pemain dari tim lain yang sedang menunggu giliran bertanding.</p>
+            <p>"Sengaja kami konsep seperti ini agar tidak ada tekanan kompetisi yang berlebihan. Yang bermain adalah penonton, dan penonton adalah pemain. Jadi, semua terlibat aktif, semua berkeringat, dan yang paling penting semua tertawa bersama," ujar Dedi Dores/Ketua Panitia.</p>
+            <p>Meskipun bersifat santai, pertandingan tetap berjalan seru. Karena sistemnya acak, setiap pemain dituntut untuk cepat beradaptasi dengan rekan tim barunya. Ini menjadi ajang latihan koordinasi dan komunikasi yang baik antar pemuda desa.</p>
+            <p>Kegiatan ini rencananya akan dijadikan agenda rutin sebagai wadah penyaluran hobi sekaligus memantau potensi bakat sepak bola di Desa Tanete. Liga mini soccer ini menjadi bukti bahwa untuk menciptakan kebahagiaan dan kekompakan tidak selalu memerlukan kemeriahan besar, melainkan cukup dengan kebersamaan yang tulus.</p>
+            <p>Pertandingan diakhiri dengan istirahat bersama, di mana para pemuda duduk melingkar sambil berbincang santai, memperkuat ikatan persaudaraan yang telah terjalin selama ini.</p>
+            
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-100">
+  <p class="text-sm font-semibold text-gray-500 mb-3">Bagikan berita ini:</p>
+  <div class="flex flex-wrap gap-3">
+    
+    <a id="share-wa" href="#" target="_blank" 
+       class="flex items-center bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition">
+       <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+    </a>
+
+    <a id="share-fb" href="#" target="_blank" 
+       class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+       <i class="fab fa-facebook mr-2"></i> Facebook
+    </a>
+
+    <button onclick="copyToClipboard()" 
+       class="flex items-center bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition">
+       <i class="fas fa-link mr-2"></i> Salin Link
+    </button>
+
+  </div>
+</div>
+
+<script>
+  const currentUrl = window.location.href;
+  const currentTitle = document.title;
+
+  // Link WhatsApp
+  document.getElementById('share-wa').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(currentTitle + ' - ' + currentUrl)}`;
+
+  // Link Facebook
+  document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+
+  // Fungsi Salin Link
+  function copyToClipboard() {
+    navigator.clipboard.writeText(currentUrl);
+    alert("Link berita berhasil disalin!");
+  }
+</script>
+        <div class="mt-10 pt-6 border-t border-gray-100 text-sm text-gray-500">
+            Diterbitkan oleh: Pemerintah Desa Tanete
+        </div>
+    </div>
+</body>
+</html>
