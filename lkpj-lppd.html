@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wujudkan Tata Kelola Transparan, Kepala Desa Tanete Sampaikan Laporan Penyelenggaraan Pemerintahan dan Kinerja Tahunan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10 px-4">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+        <a href="index.html" class="text-blue-600 font-semibold hover:underline">← Kembali ke Daftar Berita</a>
+        
+        <h1 class="text-3xl font-bold my-6 text-gray-800">Wujudkan Tata Kelola Transparan, Kepala Desa Tanete Sampaikan Laporan Penyelenggaraan Pemerintahan dan Kinerja Tahunan</h1>
+        
+        <img src="https://desatanete.github.io/assets/lkpj-lppd.jpeg" class="w-full rounded-xl mb-8 shadow-md">
+        
+        <div class="text-gray-700 leading-relaxed text-lg space-y-4">
+            <p>TANETE – Pemerintah Desa Tanete melaksanakan agenda konstitusional penting melalui Musyawarah Desa terkait penyampaian Laporan Penyelenggaraan Pemerintahan Desa (LPPD) akhir tahun anggaran dan pemaparan Laporan Kerja Pertanggung jawaban (LKPJ) kepada Badan Permusyawaratan Desa (BPD). Kegiatan ini merupakan bentuk pertanggungjawaban nyata Kepala Desa dalam menjalankan amanah undang-undang serta memastikan seluruh program pembangunan yang telah direncanakan berjalan sesuai dengan koridor yang ditetapkan.</p>
+            <p>Dalam laporannya, Kepala Desa memaparkan capaian strategis yang mencakup bidang penyelenggaraan pemerintahan, pelaksanaan pembangunan, pembinaan kemasyarakatan, hingga pemberdayaan masyarakat. Penjelasan tersebut mencakup sejauh mana efektivitas penggunaan anggaran desa dalam merespons kebutuhan mendesak warga, seperti peningkatan kualitas sarana publik dan akses layanan administrasi yang kini semakin dipermudah melalui inovasi tata kelola di kantor desa. Keberhasilan ini dinilai sebagai hasil kolaborasi yang solid antara perangkat desa, lembaga desa, dan partisipasi aktif seluruh lapisan masyarakat.</p>
+            <p>Selain memaparkan keberhasilan fisik, laporan kinerja ini juga menyentuh aspek non-fisik termasuk peningkatan kapasitas sumber daya manusia dan pengelolaan bantuan sosial bagi warga kurang mampu. Kepala Desa menguraikan secara jujur tantangan yang dihadapi dalam pencapaian target kerja, termasuk hambatan teknis dalam penyerapan anggaran pada sektor-sektor tertentu yang akan menjadi catatan evaluasi penting bagi BPD. Hal ini menunjukkan bahwa laporan yang disampaikan bukan sekadar rutinitas formalitas, melainkan instrumen evaluasi kritis untuk memperbaiki pola kerja di tahun mendatang.</p>
+            <p>Musyawarah tersebut ditutup dengan penyerahan dokumen laporan secara simbolis kepada ketua BPD sebagai representasi pengawasan masyarakat. Melalui momentum ini, diharapkan kepercayaan publik terhadap pemerintah desa semakin meningkat, mengingat seluruh kebijakan yang diambil senantiasa berorientasi pada kemaslahatan warga. Pemerintah Desa Tanete berkomitmen untuk terus menjaga integritas dan profesionalisme demi mewujudkan visi Kabupaten Sidrap yang lebih maju dan mandiri dari tingkat desa.</p>
+          
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-100">
+  <p class="text-sm font-semibold text-gray-500 mb-3">Bagikan berita ini:</p>
+  <div class="flex flex-wrap gap-3">
+    
+    <a id="share-wa" href="#" target="_blank" 
+       class="flex items-center bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition">
+       <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+    </a>
+
+    <a id="share-fb" href="#" target="_blank" 
+       class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+       <i class="fab fa-facebook mr-2"></i> Facebook
+    </a>
+
+    <button onclick="copyToClipboard()" 
+       class="flex items-center bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition">
+       <i class="fas fa-link mr-2"></i> Salin Link
+    </button>
+
+  </div>
+</div>
+
+<script>
+  const currentUrl = window.location.href;
+  const currentTitle = document.title;
+
+  // Link WhatsApp
+  document.getElementById('share-wa').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(currentTitle + ' - ' + currentUrl)}`;
+
+  // Link Facebook
+  document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+
+  // Fungsi Salin Link
+  function copyToClipboard() {
+    navigator.clipboard.writeText(currentUrl);
+    alert("Link berita berhasil disalin!");
+  }
+</script>
+        <div class="mt-10 pt-6 border-t border-gray-100 text-sm text-gray-500">
+            Diterbitkan oleh: Pemerintah Desa Tanete
+        </div>
+    </div>
+</body>
+</html>
