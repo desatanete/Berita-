@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUMDes Hikmat Desa Tanete Paparkan Laporan Pertanggungjawaban Tahunan, Fokus pada Penguatan Ekonomi dan Transparansi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10 px-4">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+        <a href="index.html" class="text-blue-600 font-semibold hover:underline">← Kembali ke Daftar Berita</a>
+        
+        <h1 class="text-3xl font-bold my-6 text-gray-800">BUMDes Hikmat Desa Tanete Paparkan Laporan Pertanggungjawaban Tahunan, Fokus pada Penguatan Ekonomi dan Transparansi</h1>
+        
+        <img src="https://desatanete.github.io/assets/laporan-bumdes.jpeg" class="w-full rounded-xl mb-8 shadow-md">
+        
+        <div class="text-gray-700 leading-relaxed text-lg space-y-4">
+            <p>TANETE – Pemerintah Desa Tanete menggelar Musyawarah Desa dalam rangka penyampaian Laporan Pertanggungjawaban (LPJ) Pengurus BUMDes Hikmat untuk tahun buku yang berjalan. Kegiatan yang dipusatkan di Aula Pertemuan Desa Tanete ini dihadiri langsung oleh jajaran Pemerintah Desa, Badan Permusyawaratan Desa (BPD), serta tokoh masyarakat. Kehadiran Pendamping Desa dalam forum ini memberikan bobot tersendiri, sekaligus memastikan bahwa seluruh proses pelaporan dan tata kelola usaha desa telah berjalan sesuai dengan regulasi dan standar teknis yang ditetapkan oleh kementerian terkait.</p>
+            <p>Dalam pemaparannya, jajaran direksi BUMDes Hikmat menguraikan secara rinci dinamika pengelolaan unit usaha yang selama ini menjadi motor penggerak ekonomi di Desa Tanete. laporan tersebut menyajikan gambaran utuh mengenai arus kas, mulai dari pemanfaatan modal kerja hingga perolehan laba bersih yang berhasil dicapai melalui berbagai unit layanan masyarakat. Pengelola secara terbuka menjelaskan bagaimana setiap rupiah dari modal desa dikelola untuk memberikan dampak ekonomi yang nyata, sembari tetap mengedepankan prinsip kehati-hatian dalam setiap pengambilan keputusan bisnis.</p>
+            <p>Pendamping Desa yang hadir memberikan apresiasi sekaligus catatan evaluatif terhadap kinerja BUMDes Hikmat. Dalam pandangannya, Pendamping Desa menekankan pentingnya sinkronisasi antara unit usaha BUMDes dengan potensi keunggulan lokal yang ada di Desa Tanete agar keberlanjutan usaha dapat terus terjaga. Pendampingan ini diharapkan mampu meningkatkan kapasitas pengurus dalam menyusun administrasi keuangan yang lebih akuntabel serta memotivasi lahirnya inovasi unit usaha baru yang lebih kompetitif di tingkat kabupaten maupun provinsi.</p>
+            <p>Musyawarah ditutup dengan penandatanganan berita acara penerimaan laporan sebagai bukti sahnya pertanggungjawaban pengurus kepada masyarakat. Melalui forum ini, Pemerintah Desa Tanete berharap BUMDes Hikmat tidak hanya sekadar menjadi badan usaha, namun tumbuh menjadi pilar utama dalam menyumbang Pendapatan Asli Desa (PADes). Dengan pengawasan yang ketat dari BPD dan pendampingan berkelanjutan, BUMDes Hikmat berkomitmen untuk terus berbenah dan memberikan kontribusi yang lebih besar bagi kesejahteraan seluruh warga Desa Tanete di masa depan.</p>
+          
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-100">
+  <p class="text-sm font-semibold text-gray-500 mb-3">Bagikan berita ini:</p>
+  <div class="flex flex-wrap gap-3">
+    
+    <a id="share-wa" href="#" target="_blank" 
+       class="flex items-center bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition">
+       <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+    </a>
+
+    <a id="share-fb" href="#" target="_blank" 
+       class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+       <i class="fab fa-facebook mr-2"></i> Facebook
+    </a>
+
+    <button onclick="copyToClipboard()" 
+       class="flex items-center bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition">
+       <i class="fas fa-link mr-2"></i> Salin Link
+    </button>
+
+  </div>
+</div>
+
+<script>
+  const currentUrl = window.location.href;
+  const currentTitle = document.title;
+
+  // Link WhatsApp
+  document.getElementById('share-wa').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(currentTitle + ' - ' + currentUrl)}`;
+
+  // Link Facebook
+  document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+
+  // Fungsi Salin Link
+  function copyToClipboard() {
+    navigator.clipboard.writeText(currentUrl);
+    alert("Link berita berhasil disalin!");
+  }
+</script>
+        <div class="mt-10 pt-6 border-t border-gray-100 text-sm text-gray-500">
+            Diterbitkan oleh: Pemerintah Desa Tanete
+        </div>
+    </div>
+</body>
+</html>
