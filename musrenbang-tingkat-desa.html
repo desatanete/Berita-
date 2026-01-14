@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serap Aspirasi Warga, Desa Tanete Gelar Musrenbang untuk RKPD Sidrap Tahun 2027</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10 px-4">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+        <a href="index.html" class="text-blue-600 font-semibold hover:underline">← Kembali ke Daftar Berita</a>
+        
+        <h1 class="text-3xl font-bold my-6 text-gray-800">Serap Aspirasi Warga, Desa Tanete Gelar Musrenbang untuk RKPD Sidrap Tahun 2027</h1>
+        
+        <img src="https://desatanete.github.io/assets/musrenbang-desa.jpeg" class="w-full rounded-xl mb-8 shadow-md">
+        
+        <div class="text-gray-700 leading-relaxed text-lg space-y-4">
+            <p>TANETE – Pemerintah Desa Tanete, Kecamatan MaritengngaE, menggelar Musyawarah Perencanaan Pembangunan (Musrenbang) tingkat desa dalam rangka penyusunan Rencana Kerja Pemerintah Daerah (RKPD) Kabupaten Sidenreng Rappang (Sidrap) Tahun 2027, pada Rabu (14/01).</p>
+            <p>Kegiatan yang berlangsung di Aula Kantor Desa ini menjadi wadah krusial bagi masyarakat untuk mengusulkan program-program prioritas yang akan diperjuangkan di tingkat kabupaten pada tahun mendatang.</p>
+            <p>Dalam sambutannya, Kepala Desa Tanete menyampaikan bahwa usulan tahun ini tetap menitikberatkan pada sinkronisasi program antara kebutuhan lokal desa dengan arah kebijakan Pemerintah Kabupaten Sidrap.</p>
+            <p>"Kita ingin memastikan aspirasi masyarakat, mulai dari perbaikan drainase, pengadaan bibit unggul bagi petani, hingga peningkatan sarana pendidikan, dapat terakomodasi dalam RKPD 2027," ujarnya.</p>
+            <p>Beberapa poin utama yang menjadi pembahasan dalam Musrenbang kali ini meliputi:Peningkatan Infrastruktur Jalan Desa, Peningkatan Jalan Usaha Tani, dan Peningkatan Sarana Pendidikan</p>
+            <p>Musrenbang ini dihadiri oleh perwakilan dari camat, tokoh masyarakat, Badan Permusyawaratan Desa (BPD), perwakilan perempuan, Bhabinkamtibmas, serta tokoh pemuda. Kehadiran berbagai elemen ini memastikan bahwa perencanaan pembangunan bersifat inklusif.</p>
+            <p>Perwakilan dari Kecamatan MaritengngaE yang hadir juga mengingatkan bahwa tidak semua usulan dapat langsung direalisasikan karena keterbatasan anggaran daerah. Oleh karena itu, peserta musyawarah diminta untuk menentukan skala prioritas.</p>
+            <p>"Hasil dari Musrenbang desa ini nantinya akan dibawa ke tingkat kecamatan, lalu diperjuangkan di forum Musrenbang tingkat kabupaten. Kami berharap usulan dari Desa Tanete adalah program yang benar-benar berdampak luas bagi kesejahteraan warga," ungkap perwakilan kecamatan tersebut.</p>
+            <p>Setelah berita acara ditandatangani, daftar usulan akan diinput ke dalam sistem SIPD (Sistem Informasi Pemerintahan Daerah) untuk diverifikasi lebih lanjut oleh tim teknis dari OPD (Organisasi Perangkat Daerah) terkait di lingkungan Pemkab Sidrap.</p>
+            <p>Dengan terlaksananya Musrenbang ini, diharapkan pembangunan di Kabupaten Sidrap pada tahun 2027 mendatang dapat lebih tepat sasaran dan benar-benar berangkat dari kebutuhan riil di akar rumput.</p>
+          
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-100">
+  <p class="text-sm font-semibold text-gray-500 mb-3">Bagikan berita ini:</p>
+  <div class="flex flex-wrap gap-3">
+    
+    <a id="share-wa" href="#" target="_blank" 
+       class="flex items-center bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition">
+       <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+    </a>
+
+    <a id="share-fb" href="#" target="_blank" 
+       class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+       <i class="fab fa-facebook mr-2"></i> Facebook
+    </a>
+
+    <button onclick="copyToClipboard()" 
+       class="flex items-center bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition">
+       <i class="fas fa-link mr-2"></i> Salin Link
+    </button>
+
+  </div>
+</div>
+
+<script>
+  const currentUrl = window.location.href;
+  const currentTitle = document.title;
+
+  // Link WhatsApp
+  document.getElementById('share-wa').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(currentTitle + ' - ' + currentUrl)}`;
+
+  // Link Facebook
+  document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+
+  // Fungsi Salin Link
+  function copyToClipboard() {
+    navigator.clipboard.writeText(currentUrl);
+    alert("Link berita berhasil disalin!");
+  }
+</script>
+        <div class="mt-10 pt-6 border-t border-gray-100 text-sm text-gray-500">
+            Diterbitkan oleh: Pemerintah Desa Tanete
+        </div>
+    </div>
+</body>
+</html>
